@@ -13,4 +13,7 @@ jobs:
       - run: npm test -- --coverage
         env:
           CI: true
+      - uses: actions/javascript-action@v1
+        with: 
+          milliseconds: 1000
   
