@@ -17,15 +17,6 @@ jobs:
       - name: Checkout Source
         uses: actions/checkout@v2
 
-      - name: Set up JDK
-        uses: actions/setup-java@v2
-        with:
-          java-version: 11
-          java-package: jdk
-          distribution: temurin
-          # Using the integrated cache functionality to speed up builds
-          cache: maven
-
       - name: Initialize CodeQL Scanning
         uses: github/codeql-action/init@v1
         with:
