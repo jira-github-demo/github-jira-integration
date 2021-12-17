@@ -29,12 +29,7 @@ jobs:
       - name: Initialize CodeQL Scanning
         uses: github/codeql-action/init@v1
         with:
-          languages: java
-
-      # We are using a custom build step to have greater control over the build process over using autobuild
-      - name: Custom Build Step
-        run: mvn compile -B
-        shell: bash
+          languages: javascript
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v1
