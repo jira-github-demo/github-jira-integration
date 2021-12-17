@@ -71,5 +71,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### Adding an extra line here...
-
-## Implementing logout function
